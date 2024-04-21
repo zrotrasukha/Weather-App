@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-[#0b0b0b] ">
+<body class="bg-[#0b0b0b] box-border ">
     <div id="main" class="flex py-10 px-52 text-[rgb(225,219,214)]">
+        <!-- First section (Date and time and search bar) -->
         <div id="left" class="w-screen h-screen">
             <div id="sec1" class="mx-10 font-urbanist flex justify-between">
                 <div id="placeTime">
@@ -17,11 +18,17 @@
                         Nawada, Bihar</div>
                     <div id="date">21, January, 2023</div>
                 </div>
-                
+                <div id="search" >
+                    <input id="searchBar" type="text" class="" placeholder="Enter Location" class="w-10/12 bg-slate-40 h-8">
+                    <button onclick="fetching()" class="searchBtn">search</button>
+                </div>
+ 
             </div>
+            <!--First Section ends here-->
+            <!-- Second Section starts here (Temprature, wind and humidity details)  -->
             <div id="sec2" class="flex h-1/2 w-full mt-20  justify-center ">
-                <div id="temp">
-                    <h1 class="text-[10rem]   font-semibold ">20°</h1>
+                <div id="temp" class="ml-14">
+                    <h1 class="text-[10rem] font-semibold ">20°</h1>
                     <h3 class="text-5xl -mt-6 ml-3  ">Cloudy</h3>
                 </div>
                 <div id="Status" class="   pt-32 -ml-5">
@@ -39,6 +46,9 @@
                 </div>
 
             </div>
+            <!-- Second Section ends here -->
+            <!-- Third Section starts here (History of part 7 days)  -->
+
             <div id="sec3" class="flex flex-wrap h-auto justify-around items-center ">
                 <div id="boxes" class="flex h-auto flex-wrap">
                     <div id="history1" class="h-36 w-32 flex items-center flex-col justify-center">
@@ -78,32 +88,8 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Third Section ends here -->
         </div>
-        <!-- <div id="right" class="bg-neutral-100 w-[30%] h-screen"> -->
-        <!-- <div id="sec1-right" class="flex flex-col font-urbanist justify-center items-center pt-10 ">
-                <p class="text-3xl font-medium">Good Morning</p>
-                <div id="time" class="text-2xl pt-3 ">12:27 PM</div>
-            </div>
-            <div id="sec2-right" class="flex justify-center pt-14 h-52">
-                <div id="sec2-r-p1">
-                    <h4 id="tempSmall" class="text-5xl text-stone-600 ">20</h4>
-                </div>
-                <div id="sec2-r-p2" class="flex flex-col items-center">
-
-                    <div id="windStatusSm" class="flex items-center">
-                        <img src="/lcons/wind-stone.svg" class="h-5" alt="">
-                        <p class="pl-1  ">6.1 mph</p>
-                    </div>
-                    <div id="humiditySm" class="flex items-center">
-                        <img src="/lcons/humidity.svg" class="h-5" alt="">
-                        <p class="pl-1  ">6.1 mph</p>
-                    </div>
-                    <div id="feelsLike" class=" -ml-9 pt-4 font-urbanist text-sm opacity-45">Feels like 19°</div>
-                </div>
-
-            </div> -->
-        <!-- </div> -->
 
         <script src="script.js"></script>
 </body>
